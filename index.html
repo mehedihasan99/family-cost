@@ -5,20 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- css link start-->
+    <!-- Bootstrap style  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- css link -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- css link end  -->
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt
-      debitis autem corrupti omnis quam earum eaque magni obcaecati tenetur
-      optio excepturi, iusto consequatur provident placeat aliquam ab sapiente
-      molestias nesciunt? Quaerat enim itaque vel suscipit nam, voluptatum
-      aliquam hic.
-    </p>
-    <!-- js link start -->
+    <header>
+      <h1 class="text-center my-4 fw-bold fs-2"><span class="text-warning">Family Cost</span> <span class="text-primary">Calculator</span></h1>
+    </header>
+    <main>
+      <section class="mb-4">
+        <div class="container">
+          <div class="row">
+            <div class=" col-12 col-md-6">
+              <div>
+                <img class="w-100 img-fluid" src="imgs/money-1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <!--calculation form part-->
+              <form class="calculation-form ">
+                  <div>
+                <h3 class="income-heading mb-3 fw-bold">Income</h3>
+                <div class="form-group">
+                  <label for="" class="fw-bold">Income:</label>
+                  <input class="ps-2" type="text" value="10000" />
+                </div>
+              </div>
+              <div>
+                <h3 class="expenses-heading mb-3 fw-bold">Expenses</h3>
+                <div class="form-group">
+                  <label for="" class="fw-bold">Food:</label>
+                  <input class="ps-2" type="text" value="3000" />
+                </div>
+                <div class="form-group">
+                  <label for="" class="fw-bold">Rent:</label>
+                  <input class="ps-2" type="text" value="2000" />
+                </div>
+                <div class="form-group">
+                  <label for="" class="fw-bold">Clothes:</label>
+                  <input class="ps-2" type="text" value="500" />
+                </div>
+                <div class="cal-btn">
+                    <button class="px-4 py-2 border-0 bg-primary text-white my-3 rounded">Calculate</button>
+                </div>
+              </form>
+              <!-- total expenses part-->
+              <div class="d-flex justify-content-center gap-2 fw-bold">
+                  <p>Total Expenses:</p>
+                  <p>5500</p>
+              </div>
+              <div class="d-flex justify-content-center gap-2 fw-bold">
+                  <p >Balance:</p>
+                  <p>5500</p>
+              </div>
+            
+              <!-- saving part -->
+              <div class="d-flex align-content-center justify-content-center gap-2">
+                  <p>Save:</p>
+                  <p class="save-input"><input value="20" class="w-100 text-center" type="text"></p>
+                  <p>%</p>
+                  <div>
+                      <a class="px-4 py-2 text-decoration-none  border-0 bg-primary text-white my-3 rounded">Calculate</a>
+                  </div>
+              </div>
+              <!-- remaining part -->
+               <div class="d-flex justify-content-center gap-2 fw-bold">
+                  <p>Saving Amount:</p>
+                  <p>2000</p>
+              </div>
+              <div class="d-flex justify-content-center gap-2 fw-bold">
+                  <p >Remaining Balance</p>
+                  <p>2500</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- js link -->
     <script src="js/app.js"></script>
-    <!-- js link end -->
+    <!-- Bootstrap js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

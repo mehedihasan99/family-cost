@@ -1,0 +1,42 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+/* form */
+.calculation-form {
+    background-color: #F8F8F8;
+    display: grid;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 19px -5px rgba(0, 0, 0, 0.2);
+}
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+div.form-group {
+    display: table-row;
+}
+
+label {
+    padding-right: 10px;
+}
+.income-heading,
+.expenses-heading,
+.cal-btn {
+    margin-left: 90px;
+}
+/*save */
+.save-input{
+    width: 5rem;
+}
