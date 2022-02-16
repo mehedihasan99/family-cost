@@ -10,7 +10,8 @@ body{
     sans-serif;
 }
 
-/* form */
+/*-------------- form part
+---------------------------*/
 .calculation-form {
     background-color: #F8F8F8;
     display: grid;
@@ -36,7 +37,8 @@ label {
 .cal-btn {
     margin-left: 90px;
 }
-/*save */
+/*--------------saving part
+-------------------------- */
 .save-input{
     width: 5rem;
 }
