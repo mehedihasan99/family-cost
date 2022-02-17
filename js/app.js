@@ -20,9 +20,9 @@ document.getElementById("calculate-btn").addEventListener("click", function(){
         totalExpensesInput.innerText = totalExpensesValue;
         balance.innerText = incomeValue - totalExpensesValue;
     }
-    if( (food < 0) || (rent < 0) || (clothes < 0) ){
-        failureMsg.style.display = "block";
-    }
+    // if( (food < 0) || (rent < 0) || (clothes < 0) ){
+    //     failureMsg.style.display = "block";
+    // }
     else{
         failureMsg.style.display = "block";
     }
