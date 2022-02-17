@@ -6,6 +6,7 @@ function getInput(elementId){
 }
 // ------------- calculate income ---------------
 document.getElementById("calculate-btn").addEventListener("click", function(){
+    // ------- expenses part---------
    const totalExpensesInput = document.getElementById("total-expenses");
 // ---------  Total Expenses  ------- 
     let food = getInput("food");
@@ -48,7 +49,7 @@ document.getElementById("save-btn").addEventListener("click", function(){
     //----------- remaining balance---------------
     document.getElementById("remaining-balance").innerText =  balanceValue - parseFloat(savingAmount.innerText);
     if(isNaN(totalSaving)){
-        failureMsg.style.display = "block";
+        failureMsg.style.display = "block"; 
     }
     else if(parseFloat(savingAmount.innerText) > balanceValue){
         failureMsg.style.display = "block";
