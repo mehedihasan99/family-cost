@@ -1,10 +1,9 @@
 function getInput(elementId){
     const elementInput = document.getElementById(elementId);
     const elementInputValue = parseFloat(elementInput.value) ;
-    // elementInput.value = 0;
     return elementInputValue;
 }
-// calculate income
+// ------------- calculate income ---------------
 document.getElementById("calculate-btn").addEventListener("click", function(){
    const totalExpensesInput = document.getElementById("total-expenses");
 // ---------  Total Expenses  ------- 
@@ -28,27 +27,25 @@ document.getElementById("calculate-btn").addEventListener("click", function(){
         failureMsg.style.display = "block";
     }
 })
-// calculate saving
+// -------- calculate saving ---------------
 document.getElementById("save-btn").addEventListener("click", function(){
     const income = getInput("income");
     const saveInput = getInput("save-input");
     const failureMsg = document.getElementById("failure-msg");
     const savingAmount = document.getElementById("saving-amount");
+    
     const totalSaving = income * (saveInput / 100);
     savingAmount.innerText = totalSaving;
-    // Remaining Balance part
+    //------------- Remaining Balance part---------
     const balance = document.getElementById("balance");
     const balanceValue = parseFloat(balance.innerText);
-    // remaining balance
+    //----------- remaining balance---------------
     document.getElementById("remaining-balance").innerText =  balanceValue - parseFloat(savingAmount.innerText);
     if(isNaN(totalSaving)){
         failureMsg.style.display = "block";
     }
-    else if(savingAmount.innerText > balanceValue){
+    else if(parseFloat(savingAmount.innerText) > balanceValue){
         failureMsg.style.display = "block";
     }
-    
-    
-
 })
 

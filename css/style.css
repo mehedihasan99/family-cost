@@ -51,7 +51,7 @@ label {
 .save-btn > a{
     cursor: pointer;
 }
-/*  */
+/* ---------- failure msg style------ */
 .notify {
     color: #fff;
     text-align: center;
