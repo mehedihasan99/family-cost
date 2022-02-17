@@ -17,90 +17,119 @@
   </head>
   <body>
     <header>
-      <h1 class="text-center my-4 fw-bold fs-2"><span class="text-warning">Family Cost</span> <span class="text-primary">Calculator</span></h1>
+      <h1 class="text-center my-4 fw-bold fs-2">
+        <span class="text-warning">Family Cost</span>
+        <span class="text-primary">Calculator</span>
+      </h1>
     </header>
     <main>
       <section>
-        <div class="container mb-4 mb-md-0">
+        <div class="container">
           <div class="row">
-            <div class=" col-12 col-md-6">
+            <!-- image part -->
+            <div class="col-12 col-md-6">
               <div>
                 <img class="w-100 img-fluid" src="imgs/money-1.jpg" alt="" />
               </div>
             </div>
+            <!-- calculation form part -->
             <div class="col-12 col-md-6">
-                <!--calculation form part-->
-              <form class="calculation-form ">
+              <div class="calculation-form">
+                <form action="" class="">
                   <div>
-                <h3 class="income-heading mb-3 fw-bold">Income</h3>
-                <div class="form-group">
-                  <label for="" class="fw-bold">Income:</label>
-                  <input id="income-value" class="ps-2" type="text" value="10000" />
-                </div>
-              </div>
-              <div>
-                <h3 class="expenses-heading mb-3 fw-bold">Expenses</h3>
-                <div class="form-group">
-                  <label for="" class="fw-bold">Food:</label>
-                  <input class="ps-2" type="text" value="3000" />
-                </div>
-                <div class="form-group">
-                  <label for="" class="fw-bold">Rent:</label>
-                  <input class="ps-2" type="text" value="2000" />
-                </div>
-                <div class="form-group">
-                  <label for="" class="fw-bold">Clothes:</label>
-                  <input class="ps-2" type="text" value="500" />
-                </div>
-                <p id="add-tk"></p>
-                <div class="text-center">
-                    <a id="calculate-btn" href="#" type="submit" class="px-4 py-2 border-0 bg-primary text-white my-3 rounded text-decoration-none">Calculate</a>
-                  
-                </div>
-                <!--  -->
-                <!--  -->
-              </form>
-              <!-- total expenses part-->
-              <div class="d-flex justify-content-center gap-2 fw-bold">
-                  <p>Total Expenses:</p>
-                  <p>5500</p>
-              </div>
-              <div class="d-flex justify-content-center gap-2 fw-bold">
-                  <p >Balance:</p>
-                  <p>5500</p>
-              </div>
-            
-              <!-- saving part -->
-              <div class="d-flex align-content-center justify-content-center my-2 gap-2">
-                  <p>Save:</p>
-                  <p class="save-input"><input value="20" class="w-100 text-center" type="text"></p>
-                  <p>%</p>
-                  <div>
-                      <a href="#" class="px-4 py-2 text-decoration-none  border-0 bg-primary text-white my-3 rounded">Calculate</a>
+                    <div>
+                      <h3 class="income-heading mb-3 fw-bold">Income</h3>
+                    </div>
+                    <div class="form-group">
+                      <label for="" class="fw-bold">Income:</label>
+                      <input
+                        id="income-value"
+                        class="ps-2"
+                        type="text"
+                        value="10000"
+                      />
+                    </div>
                   </div>
-              </div>
-              <!-- remaining part -->
-               <div class="d-flex justify-content-center gap-2 fw-bold">
-                  <p>Saving Amount:</p>
-                  <p>2000</p>
-              </div>
-              <div class="d-flex justify-content-center gap-2 fw-bold">
-                  <p >Remaining Balance</p>
-                  <p>2500</p>
-              </div>
+                  <!-- Expenses -->
+                  <div>
+                    <div>
+                      <!--  -->
+                      <h3 class="expenses-heading mb-3 fw-bold">Expenses</h3>
+                    </div>
+                    <div class="form-group">
+                      <!--  -->
+                      <label for="" class="fw-bold">Food:</label>
+                      <input class="ps-2" type="text" value="3000" />
+                    </div>
+                    <div class="form-group">
+                      <!--  -->
+                      <label for="" class="fw-bold">Rent:</label>
+                      <input class="ps-2" type="text" value="2000" />
+                    </div>
+                    <div class="form-group">
+                      <!--  -->
+                      <label for="" class="fw-bold">Clothes:</label>
+                      <input class="ps-2" type="text" value="500" />
+                    </div>
+                  </div>
+                </form>
+                <!-- calculate btn -->
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    class="px-4 py-2 border-0 bg-primary text-white my-3 rounded text-decoration-none"
+                  >
+                    Calculate
+                  </button>
+                </div>
+                <!-- total expenses part -->
+                <div>
+                  <div class="d-flex justify-content-center gap-2 fw-bold">
+                    <p>Total Expenses:</p>
+                    <p>5500</p>
+                  </div>
+                  <div class="d-flex justify-content-center gap-2 fw-bold">
+                    <p>Balance:</p>
+                    <p>5500</p>
+                  </div>
+                </div>
+                <!-- saving part -->
+                <div
+                  class="d-flex align-content-center justify-content-center gap-2"
+                >
+                  <div
+                    class="d-flex align-content-center justify-content-center gap-2"
+                  >
+                    <p>Save:</p>
+                    <p class="save-input">
+                      <input value="20" class="w-100 text-center" type="text" />
+                    </p>
+                    <p>%</p>
+                  </div>
+                  <div class="save-btn">
+                    <a
+                      class="px-4 py-2 text-decoration-none border-0 bg-primary text-white px-4 my-3 rounded"
+                    >
+                      Save</a
+                    >
+                  </div>
+                </div>
+                <!-- remaining part -->
+                <div>
+                  <div class="d-flex justify-content-center gap-2 fw-bold">
+                    <p>Saving Amount:</p>
+                    <p>2000</p>
+                  </div>
+                  <div class="d-flex justify-content-center gap-2 fw-bold">
+                    <p>Remaining Balance</p>
+                    <p>2500</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <!-- js link -->
-    <script src="js/app.js"></script>
-    <!-- Bootstrap js link -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

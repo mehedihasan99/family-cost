@@ -42,3 +42,6 @@ label {
 .save-input{
     width: 5rem;
 }
+.save-btn > a{
+    cursor: pointer;
+}
