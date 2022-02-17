@@ -53,21 +53,17 @@
                   <!-- Expenses -->
                   <div>
                     <div>
-                      <!--  -->
                       <h3 class="expenses-heading mb-3 fw-bold">Expenses</h3>
                     </div>
                     <div class="form-group">
-                      <!--  -->
                       <label for="" class="fw-bold">Food:</label>
                       <input id="food" class="ps-2" type="text" value="3000" />
                     </div>
                     <div class="form-group">
-                      <!--  -->
                       <label for="" class="fw-bold">Rent:</label>
                       <input id="rent" class="ps-2" type="text" value="2000" />
                     </div>
                     <div class="form-group">
-                      <!--  -->
                       <label for="" class="fw-bold">Clothes:</label>
                       <input
                         id="clothes"
@@ -108,12 +104,18 @@
                   >
                     <p>Save:</p>
                     <p class="save-input">
-                      <input value="20" class="w-100 text-center" type="text" />
+                      <input
+                        id="save-input"
+                        value="20"
+                        class="w-100 text-center"
+                        type="text"
+                      />
                     </p>
                     <p>%</p>
                   </div>
                   <div class="save-btn">
                     <a
+                      id="save-btn"
                       class="px-4 py-2 text-decoration-none border-0 bg-primary text-white px-4 my-3 rounded"
                     >
                       Save</a
@@ -123,12 +125,12 @@
                 <!-- remaining part -->
                 <div>
                   <div class="d-flex justify-content-center gap-2 fw-bold">
-                    <p>Saving Amount:</p>
-                    <p>2000</p>
+                    <p>Saving Amount :</p>
+                    <p id="saving-amount">2000</p>
                   </div>
                   <div class="d-flex justify-content-center gap-2 fw-bold">
-                    <p>Remaining Balance</p>
-                    <p>2500</p>
+                    <p>Remaining Balance :</p>
+                    <p id="remaining-balance">2500</p>
                   </div>
                 </div>
               </div>
@@ -139,7 +141,7 @@
       <section>
         <div>
           <p id="failure-msg" class="notify my-3 my-md-0 mt-sm-0 mt-md-3 w-75">
-            ❌ Please Enter a Valid Value
+            ❌ Please Enter a Valid Value And Positive Value
           </p>
         </div>
       </section>
