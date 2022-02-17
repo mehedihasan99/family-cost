@@ -1,3 +1,4 @@
+//---------- input function----------
 function getInput(elementId){
     const elementInput = document.getElementById(elementId);
     const elementInputValue = parseFloat(elementInput.value) ;
@@ -39,7 +40,6 @@ document.getElementById("save-btn").addEventListener("click", function(){
     const saveInput = getInput("save-input");
     const failureMsg = document.getElementById("failure-msg");
     const savingAmount = document.getElementById("saving-amount");
-    
     const totalSaving = income * (saveInput / 100);
     savingAmount.innerText = totalSaving;
     //------------- Remaining Balance part---------
