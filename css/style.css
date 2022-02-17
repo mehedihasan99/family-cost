@@ -8,14 +8,20 @@
 body{
     font-family: 'Roboto',
     sans-serif;
+    height: 100vh;
+}
+/* ----------image part ---------
+*/
+.img-part{
+    width: 500px;
 }
 
 /*-------------- form part
 ---------------------------*/
 .calculation-form {
     background-color: #F8F8F8;
+    height: 540px;
     display: grid;
-    padding: 10px 0px;
     justify-content: center;
     align-items: center;
     box-shadow: 1px 2px 19px -5px rgba(0, 0, 0, 0.2);
@@ -44,4 +50,17 @@ label {
 }
 .save-btn > a{
     cursor: pointer;
+}
+/*  */
+.notify {
+    color: #fff;
+    text-align: center;
+    display: none;
+    width: 400px;
+    margin: 0 auto;
+    background: #222436;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 3px 20px;
+    margin-top: 7px;
 }
