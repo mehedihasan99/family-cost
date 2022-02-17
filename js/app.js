@@ -7,10 +7,12 @@ function getInput(elementId){
 // calculate income
 document.getElementById("calculate-btn").addEventListener("click", function(){
    const totalExpensesInput = document.getElementById("total-expenses");
-//   Total Expenses   
-   const totalExpensesValue = getInput("food") + getInput("rent") + getInput("clothes"); 
-//    Balance
-    
+// ---------  Total Expenses  ------- 
+    let food = getInput("food");
+    let rent = getInput("rent");
+    let clothes = getInput("clothes");
+    const totalExpensesValue = food + rent + clothes; 
+//-------------    Balance-----------
     const incomeValue  = getInput("income");
     const balance = document.getElementById("balance");
     const failureMsg = document.getElementById("failure-msg");
@@ -18,6 +20,9 @@ document.getElementById("calculate-btn").addEventListener("click", function(){
     {
         totalExpensesInput.innerText = totalExpensesValue;
         balance.innerText = incomeValue - totalExpensesValue;
+    }
+    if( (food < 0) || (rent < 0) || (clothes < 0) ){
+        failureMsg.style.display = "block";
     }
     else{
         failureMsg.style.display = "block";
