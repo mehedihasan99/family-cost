@@ -20,6 +20,15 @@ document.getElementById("calculate-btn").addEventListener("click", function(){
         totalExpensesInput.innerText = totalExpensesValue;
         balance.innerText = incomeValue - totalExpensesValue;
     }
+    else if(food < 0){
+        failureMsg.style.display = "block";
+    }
+    else if(rent < 0){
+        failureMsg.style.display = "block";
+    }
+    else if(clothes < 0){
+        failureMsg.style.display = "block";
+    }
     else{
         failureMsg.style.display = "block";
     }
